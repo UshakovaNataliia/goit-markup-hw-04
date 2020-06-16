@@ -104,8 +104,6 @@ ul {
   color: var(--accent-color);
 }
 .logo-studio {
-  margin-right: 60px;
-
   text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
@@ -122,7 +120,11 @@ ul {
 .header .container {
   justify-content: space-between;
 }
+.nav a {
+  margin-right: 60px;
+}
 .nav,
+.site-nav,
 .contacts-nav {
   display: flex;
   align-items: center;
@@ -139,19 +141,17 @@ ul {
   color: var(--secondary-text-color);
 }
 .site-nav-title {
-  display: inline-block;
-  margin: 32px 25px;
+  padding: 32px 25px;
 }
 .contacts-nav li {
-  display: inline-block;
-  margin: 32px 15px;
+  padding: 32px 15px;
 }
 
 .contacts-nav img {
   display: inline-block;
   vertical-align: middle;
 }
-.site-nav-title:last-child,
+.site-nav-title a:last-child,
 .contacts-nav li:last-child {
   margin-right: 0;
 }
@@ -168,6 +168,7 @@ ul {
 .hero {
   text-align: center;
   padding-top: 200px;
+  padding-bottom: 200px;
 
   background-color: var(--background-hero-color);
 }
@@ -191,9 +192,8 @@ ul {
   display: inline-block;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 32px;
-  margin-bottom: 200px;
   min-width: 200px;
+  padding: 10px 32px;
 
   text-decoration: none;
   font-weight: 700;
@@ -281,7 +281,8 @@ ul {
 
 .services-title {
   display: block;
-  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
 
   text-decoration: none;
   font-weight: 700;
@@ -313,6 +314,7 @@ ul {
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
   margin-right: 30px;
+  padding-bottom: 24px;
   width: calc((100%-60px) / 4);
 
   background-color: var(--primary-white-color);
@@ -349,7 +351,6 @@ ul {
 .network-title {
   display: inline-block;
   margin-right: 10px;
-  margin-bottom: 24px;
 }
 
 .network-title:last-child {
@@ -525,13 +526,14 @@ ul {
 
 /* Портфолио */
 
+.filters {
+  margin-bottom: 50px;
+}
 .button-fiters {
   display: block;
   border: 0em;
   border-radius: 4px;
   margin-right: 8px;
-  margin-bottom: 50px;
-  padding: 6px 22px;
 
   font-family: inherit;
   text-decoration: none;
@@ -546,9 +548,9 @@ ul {
 
   background-color: var(--background-elements-color);
 }
-.button-fiters:hover,
-.button-fiters:focus,
-.button-fiters:active {
+button:hover,
+button:focus,
+button:active {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   border-radius: 4px;
@@ -556,6 +558,11 @@ ul {
     0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
+button {
+  border: 0;
+  background-color: inherit;
+  padding: 6px 22px;
+}
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -584,10 +591,11 @@ ul {
   text-decoration: none;
 }
 .card-content {
+  padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
 }
 .portfolio-title {
-  margin: 20px 24px 2px 24px;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -597,8 +605,6 @@ ul {
   color: var(--secondary-text-color);
 }
 .portfolio-kind {
-  margin: 2px 24px 20px 24px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
