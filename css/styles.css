@@ -114,6 +114,7 @@ ul {
 }
 
 /* Nav*/
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -144,12 +145,23 @@ ul {
   padding: 32px 25px;
 }
 .contacts-nav li {
-  padding: 32px 15px;
+  padding: 32px 25px;
 }
-
-.contacts-nav img {
-  display: inline-block;
-  vertical-align: middle;
+.contacts-nav .link {
+  color: var(--primary-text-color);
+}
+.link.email::before {
+  content: "";
+  margin-right: 10px;
+  width: 26px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-image: url(../images/email.svg);
+}
+.link.tel::before {
+  background-image: url(../images/phone.svg);
 }
 .site-nav-title a:last-child,
 .contacts-nav li:last-child {
@@ -169,8 +181,21 @@ ul {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  min-width: 1600px;
 
   background-color: var(--background-hero-color);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../images/headermini.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero .container {
@@ -240,6 +265,12 @@ ul {
 .advantages {
   padding-bottom: 0;
 }
+/* .advantage {
+  background-image: url(../images/antenna-1.svg), url(../images/clock-1.svg),
+    url(../images/diagram-1.svg), url(../images/astronaut-1.svg);
+  background-repeat: no-repeat;
+  background-position: right 15px bottom 15px;
+} */
 .advantage-item {
   text-align: left;
   width: calc((100%-60) / 4);
@@ -250,12 +281,32 @@ ul {
   margin-right: 0;
 }
 
-.advantage-item > img {
-  padding: 25px 100px;
-
-  background-color: var(--background-team-color);
+.advantage-item::before {
+  display: block;
+  content: "";
+  height: 120px;
   margin-bottom: 30px;
+
+  background-color: #f5f4fa;
   border-radius: 4px;
+
+  background-size: contain;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+}
+.antenna::before {
+  background-image: url(../images/antenna-1.svg);
+}
+.clock::before {
+  background-image: url(../images/clock-1.svg);
+}
+.diagram::before {
+  background-image: url(../images/diagram-1.svg);
+}
+.astronaut::before {
+  background-image: url(../images/astronaut-1.svg);
 }
 .advantage-title {
   margin-bottom: 10px;
@@ -280,9 +331,13 @@ ul {
 /* Услуги */
 
 .services-title {
+}
+.services-item {
+  width: calc((100%-60) / 3);
+  margin-right: 30px;
   display: block;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  /* padding-top: 27px; */
+  /* padding-bottom: 27px; */
 
   text-decoration: none;
   font-weight: 700;
@@ -294,13 +349,16 @@ ul {
 
   background-color: var(--background-services-color);
 }
-.services-item {
-  width: calc((100%-60) / 3);
-  margin-right: 30px;
-}
 
 .services-item:last-child {
   margin-right: 0;
+}
+.services-item > img {
+  padding-bottom: 27px;
+}
+.services-item > p {
+  display: inline-block;
+  padding-bottom: 27px;
 }
 
 /* Сотрудники */
@@ -475,6 +533,7 @@ ul {
 }
 .subscribe {
   margin-top: 57px;
+  margin-left: auto;
 }
 .subscribe-title {
   display: inline-block;
@@ -489,11 +548,14 @@ ul {
 }
 .subscribe-button {
   display: block;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   border: var(--accent-color);
   border-radius: 4px;
-  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  cursor: pointer;
 
   text-decoration: none;
   font-weight: 700;
@@ -505,10 +567,15 @@ ul {
 
   background-color: var(--accent-color);
 }
-.subscribe-button img {
-  display: inline-block;
+.subscribe-button::after {
+  content: "";
+  display: inline-flex;
   vertical-align: middle;
+  background-image: url(../images/icon-send.svg);
+  background-size: contain;
   margin-left: 10px;
+  width: 24px;
+  height: 24px;
 }
 .footer-end.container {
   padding-top: 18px;
