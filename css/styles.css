@@ -369,9 +369,12 @@ ul {
   overflow: hidden;
   margin-right: 30px;
   padding-bottom: 24px;
-  width: calc((100%-60px) / 4);
-
+  width: calc((100%-90px) / 4);
+  overflow: hidden;
   background-color: var(--primary-white-color);
+}
+.team-list-item:last-child {
+  margin-right: 0;
 }
 .team-list-item > img {
   margin-bottom: 30px;
@@ -402,9 +405,13 @@ ul {
   background-color: var(--primary-white-color);
 }
 
-.network-title {
+.network-our {
   display: inline-flex;
+}
+.network-title {
   margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .network-title:last-child {
@@ -414,13 +421,9 @@ ul {
   display: inline-flex;
   height: 44px;
   width: 44px;
-
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
 }
 .network-icon {
-  display: block;
   fill: #afb1b8;
   padding: 12px 12px;
 }
@@ -498,6 +501,7 @@ ul {
   width: 89px;
   height: 46px;
 }
+
 /* Футер */
 .footer {
   background-color: var(--background-footer-color);
@@ -728,7 +732,6 @@ button {
   margin-right: 30px;
   margin-bottom: 30px;
   width: cslc((100%-60px)/3);
-  width: 370px;
 }
 
 .portfolio-link {
