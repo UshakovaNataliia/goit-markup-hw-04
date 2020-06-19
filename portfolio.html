@@ -25,10 +25,10 @@
           </a>
           <ul class="site-nav">
             <li class="site-nav-title">
-              <a href="./index.html" class="link">Студия</a>
+              <a href="./index.html" class="link current">Студия</a>
             </li>
             <li class="site-nav-title">
-              <a href="./portfolio.html" class="link current">Портфолио</a>
+              <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
             <li class="site-nav-title">
               <a href="" class="link">Контакты</a>
@@ -38,14 +38,18 @@
 
         <ul class="contacts-nav">
           <li>
-            <img src="./images/email.svg" alt="Почта" />
-            <a href="mailto:info@devstudio.com" class="link"
+            <a class="link" href="mailto:info@devstudio.com"
+              ><svg class="contact-icon" width="16px" height="11px">
+                <use href="./images/icons.svg#email"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <img src="./images/phone.svg" alt="Телефон" />
-            <a href="tel:380961111111" class="link">+38 096 111 11 11</a>
+            <a class="link" href="tel:380961111111"
+              ><svg class="contact-icon" width="10px" height="15px">
+                <use href="./images/icons.svg#phone"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -231,41 +235,37 @@
             <li class="network-title-footer">
               <a
                 href="https://www.instagram.com/?hl=ru"
-                class="network-footer-link"
+                class="network-footer-link insta"
                 aria-label="Ссылка на Instagram"
-                >Instagram</a
-              >
+              ></a>
             </li>
             <li class="network-title-footer">
               <a
                 href="https://twitter.com"
-                class="network-footer-link"
+                class="network-footer-link twitter"
                 aria-label="Ссылка на Twitter"
-                >Twitter</a
-              >
+              ></a>
             </li>
             <li class="network-title-footer">
               <a
                 href="https://uk-ua.facebook.com/"
-                class="network-footer-link"
+                class="network-footer-link facebook"
                 aria-label="Ссылка на Facebook"
-                >Facebook</a
-              >
+              ></a>
             </li>
             <li class="network-title-footer">
               <a
                 href="https://www.linkedin.com/"
-                class="network-footer-link"
+                class="network-footer-link linkedin"
                 aria-label="Ссылка на Linkedin"
-                >Linkedin</a
-              >
+              ></a>
             </li>
           </ul>
         </div>
         <div class="subscribe">
           <b class="subscribe-title">Подпишитесь на рассылку </b>
           <button class="subscribe-button">
-            Подписаться <img src="./images/icon-send.png" alt="Отправить" />
+            Подписаться
           </button>
 
           <!--Ниже будет форма подписки-->
