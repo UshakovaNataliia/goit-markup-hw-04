@@ -332,8 +332,6 @@ ul {
   width: calc((100%-60) / 3);
   margin-right: 30px;
   display: block;
-  /* padding-top: 27px; */
-  /* padding-bottom: 27px; */
 
   text-decoration: none;
   font-weight: 700;
@@ -406,34 +404,32 @@ ul {
 }
 
 .network-our {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
 }
-.network-title {
+.network-title:not(:last-child) {
   margin-right: 10px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.network-title:last-child {
-  margin-right: 0;
 }
 .network-link {
-  display: inline-flex;
+  display: flex;
   height: 44px;
   width: 44px;
   border-radius: 50%;
+  color: #afb1b8;
+  margin: 0;
+  padding: 0;
+
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .network-icon {
-  fill: #afb1b8;
   padding: 12px 12px;
+  fill: currentColor;
 }
 .network-link:hover,
 .network-link:focus {
   background-color: var(--accent-color);
-}
-.network-icon:hover,
-.network-icon:focus {
-  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
 }
 
 /* Клиенты */
@@ -539,45 +535,27 @@ ul {
 
   color: var(--primary-white-color);
 }
-
-.network-title-footer {
-  display: inline-block;
+.network.footer {
+  display: flex;
+}
+.network-title-footer:not(:last-child) {
   margin-right: 10px;
 }
-.network-title-footer:last-child {
-  margin-right: 0;
-}
-.network.footer a {
-  text-decoration: none;
 
-  color: var(--primary-white-color);
-}
-.network.footer a:hover,
-.network.footer a:focus {
-  background-color: var(--accent-color);
-}
 .network-footer-link {
-  display: inline-block;
-  height: 44px;
+  display: flex;
+  padding: 12px 12px;
   width: 44px;
+  height: 44px;
+  fill: var(--primary-white-color);
   background-color: var(--background-footer-logo-color);
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
 }
-.insta {
-  background-image: url(../images/insta-footer.svg);
+.network-footer-link:hover,
+.network-footer-link:focus {
+  background-color: var(--accent-color);
 }
-.twitter {
-  background-image: url(../images/twitter-footer.svg);
-}
-.facebook {
-  background-image: url(../images/fb-footer.svg);
-}
-.linkedin {
-  background-image: url(../images/linkedin-footer.svg);
-}
+
 .subscribe {
   margin-top: 57px;
   margin-left: auto;
