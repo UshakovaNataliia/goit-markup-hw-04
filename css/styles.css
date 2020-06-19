@@ -438,68 +438,32 @@ ul {
 
 /* Клиенты */
 
-.customers {
-  padding-left: 0;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
+.customer-logo:not(:last-child) {
+  margin-right: 30px;
 }
-.customer-logo {
+.customer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 170px;
   height: 90px;
+
+  color: #afb1b8;
+
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
   border-radius: 4px;
 }
 .customer-logo:last-child {
   margin-right: 0;
 }
-.customer-logo:hover,
-.customer-logo:focus {
-  border: 1px solid var(--accent-color);
+.customer-link:hover,
+.customer-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 .customer-icon {
-  fill: #afb1b8;
-}
-.customer-icon:hover,
-.customer-icon:focus {
-  fill: var(--accent-color);
-}
-.logo1 {
-  margin-top: 20px;
-  width: 45px;
-  height: 50px;
-}
-
-.logo2 {
-  margin-top: 19px;
-  width: 40px;
-  height: 52px;
-}
-
-.logo3 {
-  margin-top: 24px;
-  width: 41px;
-  height: 43px;
-}
-
-.logo4 {
-  margin-top: 24px;
-  width: 80px;
-  height: 42px;
-}
-.logo5 {
-  margin-top: 22px;
-  width: 59px;
-  height: 47px;
-}
-
-.logo6 {
-  margin-top: 22px;
-  width: 89px;
-  height: 46px;
+  fill: currentColor;
 }
 
 /* Футер */
