@@ -328,7 +328,7 @@ ul {
 .services-item {
   width: calc((100%-60) / 3);
   margin-right: 30px;
-  display: block;
+  display: inline-block;
 
   text-decoration: none;
   font-weight: 700;
@@ -344,11 +344,7 @@ ul {
 .services-item:last-child {
   margin-right: 0;
 }
-/* .services-item > img {
-  padding-bottom: 27px; */
-}
 .services-item > p {
-  display: inline-block;
   padding-bottom: 27px;
   padding-top: 27px;
 }
