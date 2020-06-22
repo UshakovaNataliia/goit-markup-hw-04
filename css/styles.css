@@ -284,34 +284,6 @@ ul {
   margin: 25px 100px;
 }
 
-/* .advantage-item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  margin-bottom: 30px;
-
-  background-color: #f5f4fa;
-  border-radius: 4px;
-
-  background-size: contain;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 70px 70px;
-} */
-/* .antenna::before {
-  background-image: url(../images/antenna-1.svg);
-}
-.clock::before {
-  background-image: url(../images/clock-1.svg);
-}
-.diagram::before {
-  background-image: url(../images/diagram-1.svg);
-}
-.astronaut::before {
-  background-image: url(../images/astronaut-1.svg);
-} */
-
 .advantage-title {
   margin-top: 30px;
   margin-bottom: 10px;
