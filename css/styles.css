@@ -118,9 +118,6 @@ ul {
 .header {
   border-bottom: 1px solid #ececec;
 }
-.header .container {
-  justify-content: space-between;
-}
 .nav a {
   margin-right: 60px;
 }
@@ -258,13 +255,12 @@ ul {
 .advantages {
   padding-bottom: 0;
 }
-/* .advantage {
-  background-image: url(../images/antenna-1.svg), url(../images/clock-1.svg),
-    url(../images/diagram-1.svg), url(../images/astronaut-1.svg);
-  background-repeat: no-repeat;
-  background-position: right 15px bottom 15px;
-} */
+.advantage.container {
+  display: flex;
+}
+
 .advantage-item {
+  display: block;
   text-align: left;
   width: calc((100%-60) / 4);
   margin-right: 30px;
@@ -274,7 +270,21 @@ ul {
   margin-right: 0;
 }
 
-.advantage-item::before {
+.advantage-item > div {
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.advantage-icon {
+  display: inline-block;
+
+  width: 70px;
+  height: 70px;
+
+  margin: 25px 100px;
+}
+
+/* .advantage-item::before {
   display: block;
   content: "";
   height: 120px;
@@ -288,8 +298,8 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70px 70px;
-}
-.antenna::before {
+} */
+/* .antenna::before {
   background-image: url(../images/antenna-1.svg);
 }
 .clock::before {
@@ -300,8 +310,10 @@ ul {
 }
 .astronaut::before {
   background-image: url(../images/astronaut-1.svg);
-}
+} */
+
 .advantage-title {
+  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -323,8 +335,6 @@ ul {
 
 /* Услуги */
 
-.services-title {
-}
 .services-item {
   width: calc((100%-60) / 3);
   margin-right: 30px;
@@ -460,17 +470,15 @@ ul {
 .footer {
   background-color: var(--background-footer-color);
   padding-top: 60px;
+  padding-bottom: 60px;
 }
-.footer .container {
-  justify-content: flex-start;
-}
+
 .container .address {
   text-align: start;
 }
 .address {
   display: inline-block;
   margin-right: 147px;
-  margin-bottom: 60px;
 }
 .address > a {
   display: inline-block;
@@ -507,7 +515,9 @@ ul {
 
   color: var(--footer-contacts-color);
 }
-
+.footer-contact:last-child {
+  margin-bottom: 0;
+}
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--accent-color);
@@ -595,19 +605,6 @@ ul {
   width: 24px;
   height: 24px;
 }
-.footer-end.container {
-  padding-top: 18px;
-  padding-bottom: 21px;
-  justify-content: center;
-  border-top: 1px solid var(--background-footer-logo-color);
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.03em;
-
-  color: var(--footer-end-color);
-}
 
 /* Портфолио */
 
@@ -651,8 +648,6 @@ button {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-
-  justify-content: center;
 }
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
